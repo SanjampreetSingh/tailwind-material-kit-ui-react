@@ -60,9 +60,10 @@ export const variantStyles: any = {
     },
     tonal: {
         primary: {
-            button: '',
-            baseArea: '',
-            label: '',
+            button: 'bg-violet-200 hover:bg-violet-200 hover:shadow focus:bg-violet-200 active:bg-violet-200 dark:bg-zinc-600 dark:hover:bg-zinc-600 dark:hover:shadow dark:focus:bg-zinc-600 dark:active:bg-zinc-600',
+            baseArea:
+                'hover:bg-gray-900 hover:bg-opacity-10 focus:bg-gray-900 focus:bg-opacity-10 active:bg-gray-900 active:bg-opacity-10 group-disabled:bg-zinc-900 group-disabled:bg-opacity-10 dark:hover:bg-violet-200 dark:hover:bg-opacity-10 dark:focus:bg-violet-200 dark:focus:bg-opacity-10 dark:active:bg-violet-200 dark:active:bg-opacity-10 dark:group-disabled:bg-zinc-200 dark:group-disabled:bg-opacity-10',
+            label: 'text-gray-900 hover:text-gray-900 focus:text-gray-900 active:text-gray-900 group-disabled:opacity-40 group-disabled:text-zinc-900 dark:text-violet-200 dark:hover:text-violet-200 dark:focus:text-violet-200 dark:active:text-violet-200 dark:group-disabled:opacity-40 dark:group-disabled:text-zinc-200',
         },
     },
 };

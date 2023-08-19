@@ -29,5 +29,31 @@ export default {
 };
 
 export const Variants = (args: ButtonProps) => (
-    <Button {...args} label="Button" color="primary" />
+    <div className="flex w-full justify-between p-10">
+        <Button
+            {...args}
+            variant="filled"
+            label="Button filled"
+            color="primary"
+        />
+        <Button
+            {...args}
+            variant="outlined"
+            label="Button outlined"
+            color="primary"
+        />
+        <Button {...args} variant="text" label="Button text" color="primary" />
+        <Button
+            {...args}
+            variant="elevated"
+            label="Button elevated"
+            color="primary"
+        />
+        <Button
+            {...args}
+            variant="tonal"
+            label="Button tonal"
+            color="primary"
+        />
+    </div>
 );
