@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { baseInputStyles, baseLabelStyles } from './styles';
+import { baseInputStyles, baseLabelStyles, variantStyles } from './styles';
 
 type TextVariant = 'filled' | 'outlined';
 type TextSize = 'small' | 'medium';
@@ -79,7 +79,7 @@ export const TextField: React.FC<TextFieldProps> = ({
             <input
                 type={type}
                 id={id}
-                className={baseInputStyles}
+                className={`${baseInputStyles} ${variantStyles[variant][color]?.input}`}
                 placeholder={placeholder}
                 disabled={disabled}
                 name={name}
@@ -88,7 +88,7 @@ export const TextField: React.FC<TextFieldProps> = ({
                 value={value}
                 {...props}
             />
-            <label htmlFor={id} className={baseLabelStyles}>
+            <label htmlFor={id} className={`${baseLabelStyles} ${variantStyles[variant][color]?.label}`}>
                 {label}
             </label>
         </div>
